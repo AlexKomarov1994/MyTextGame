@@ -17,8 +17,6 @@ public class AnimaController : MonoBehaviour
     public void nazadClick()//Клик на кнопке Назад
     {
         StartCoroutine(verhNaverh());
-      
-
     }
 
     IEnumerator verhNaverh()//Анимация для задвигания
@@ -60,9 +58,5 @@ public class AnimaController : MonoBehaviour
     }
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  
 }

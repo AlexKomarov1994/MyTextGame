@@ -38,10 +38,7 @@ public class DalsheScript : MonoBehaviour
 
 
 
-    //}
-
-    //Console.WriteLine(N); 
-    //Console.ReadKey();
+   
 
     public void OnInputEvent()
     {
@@ -90,10 +87,7 @@ public class DalsheScript : MonoBehaviour
         _textForNazvanie.GetComponent<Text>().text = table[0, 0];//пишем название в блоке итогового текста. Название в фале после первого доллара
 
 
-        //Работа с карточкой вопроса. Вопрос записывается первый раз при запуске
-        //_textForCountOfQuestions.GetComponent<Text>().text = "1 / " + _countOfQuestions;
-        //_textForMainQuestion.GetComponent<Text>().text = table[_questionNow, 1];
-        //_textForSubQuestion.GetComponent<Text>().text = table[_questionNow, 2];
+       
         _randomQuestion = Random.Range(0, _countOfQuestions-1);//гинирируем рандомное число от нуля до количества вопросов
         _textForCountOfQuestions.GetComponent<Text>().text = "1 / " + _countOfQuestions;
         _textForMainQuestion.GetComponent<Text>().text = table[_randomQuestion, 1];
